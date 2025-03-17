@@ -2,7 +2,7 @@
 #container{
     display: flex;
     flex-wrap: wrap;
-    width: 480px; /*16 cuadrados * 30px de ancho */
+    width: 960px; /*16 cuadrados * 30px de ancho */
     margin: 0 auto; /* Centrar el contenedor */
 }
 
@@ -15,6 +15,14 @@
 }
 
 #newGrid{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#clearGrid{
     display: block;
     margin: 20px auto;
     padding: 10px 20px;

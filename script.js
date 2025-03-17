@@ -4,6 +4,9 @@ const container = document.querySelector("#container");
 // Seleccionar el boton
 const newGrid = document.querySelector("#newGrid");
 
+// Seleccionar el boton de limpiar
+const clearGrid = document.querySelector("#clearGrid");
+
 // Funcion para crear la cuadricula
 function createGrid(gridSize) {
     //limpiar el contenedor
@@ -56,4 +59,12 @@ newGrid.addEventListener("click", () => {
     } else {
         alert("Invalid Input. Please add a number");
     }
+});
+
+// Agregar un event listener al boton clearGrid
+clearGrid.addEventListener("click", () => {
+    const squares = document.querySelectorAll(".square");
+    squares.forEach((square) => {
+        square.style.backgroundColor = "";
+    });
 });
