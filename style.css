@@ -1,0 +1,15 @@
+/* Estilos  para el contenedor */
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px; /*16 cuadrados * 30px de ancho */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+/* Estilos para cada cuadrado */
+.square{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    box-sizing: border-box; /* Incluye el borde en el tamaño del cuadrado */
+}
